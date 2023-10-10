@@ -108,6 +108,7 @@ button span{
 .currency{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 select{
     width: 100%;
@@ -117,4 +118,31 @@ select{
     background-color: rgb(230, 243, 255);
     opacity: 0.5;
     border-radius: 3px;
+}
+@media only screen and (max-width: 880px){
+    form{
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media only screen and (max-width: 690px){
+    body{
+        background-image: url("./assets/bgm1.jpg");
+    }
+    form{
+        position: relative;
+        top: 2rem;
+        left: 0;
+        backdrop-filter: blur(6px);
+    }
+    .currency{
+        gap: 0.8rem;
+    }
+}
+@media only screen and (max-width: 475px){
+    form{
+        padding: 2rem;
+        top: 0;
+        height: 100vh;
+    }
 }
